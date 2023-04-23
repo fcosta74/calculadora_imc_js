@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  
 }
 body{
   background-image: url(../img/fundo.jpg);
@@ -16,11 +17,10 @@ body{
   min-height: 100vh;
 }
 .container{
-  min-width: 400px;
-  min-height: 400px;
+  width: 21.7rem;
   margin: 0 auto;
   border-radius: 10px;
-  border: 1px solid greenyellow;
+  border: 1px solid #32cd32;
   padding: 2rem;
 }
 .hide{
@@ -68,12 +68,18 @@ body{
   justify-content: space-between;
   margin-top: .2rem;
   gap: 1rem;
+  
+}
+#calc-btn,
+#clear-btn,
+#back-btn{
+  letter-spacing: 1px;
 }
 
 button{
   text-transform: uppercase;
   padding: 1rem 1.5rem;
-  background-color: green;
+  background-color: #32cd32;
   color: #fff;
   font-weight: bold;
   border-radius: 8px;
@@ -96,10 +102,9 @@ button:hover{
   flex-direction: column;
 }
 #imc-number{
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin-bottom: 0.6rem;
 }
-
 #imc-info{
   font-size: 1.4rem;
 }
@@ -161,7 +166,7 @@ button:hover{
   align-self: center;
 }
 .good{
-  color: #12db34;
+  color: #32cd32;
 }
 .low{
   color: #dbce12;
@@ -171,4 +176,10 @@ button:hover{
 }
 .high{
   color: #db1912;
+}
+
+@media (max-width: 480px){
+  .container{
+    width: 21.7rem;
+  }
 }
